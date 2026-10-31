@@ -1,0 +1,6 @@
+{
+  "name": "cypress-tests",
+  "private": true,
+  "description": "Specs Cypress ejecutados por TestNG",
+  "devDependencies": { "cypress": "^16.2.1" }
+}
