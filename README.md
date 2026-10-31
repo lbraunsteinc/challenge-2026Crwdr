@@ -6,7 +6,7 @@ Cypress es JavaScript y JUnit es Java: este proyecto usa **JUnit 5 (Maven) como 
 - Web: https://www.saucedemo.com/ · API: `GET https://www.mercadolibre.com.ar/menu/departments`
 
 ## Requisitos
-Java 17+, Maven 3.9+, Node 18+ y Google Chrome.
+Java 17+, Maven 3.9+, Node 18+ y Google Chrome/Firefox.
 
 ## Instalación
 ```bash
@@ -15,9 +15,9 @@ cd cypress-tests && npm install && cd ..
 
 ## Ejecución
 ```bash
-mvn test                              # Chrome, sin ventana
-mvn test -Dheaded=true                # ver el navegador en vivo
-mvn test -Dbrowser=firefox            # otro navegador (requiere Firefox instalado)
+mvn test                              # Chrome, sin front
+mvn test -Dheaded=true                # con chrome live
+mvn test -Dbrowser=firefox            # firefox
 ```
 
 En modo `-Dheaded=true` cada ventana queda abierta 4 s al terminar su spec. Se cambia con `-DholdMs=<milisegundos>` (p. ej. `-DholdMs=2000`).
